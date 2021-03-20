@@ -10,7 +10,18 @@ export default function TabOneScreen() {
   return (
     <View style={styles.container}>
       <Swiper
-        cards={['DO', 'MORE', 'OF', 'WHAT', 'MAKES', 'YOU', 'HAPPY']}
+        cards={[
+          <View>
+            <Text>HI</Text>
+          </View>,
+          'DO',
+          'MORE',
+          'OF',
+          'WHAT',
+          'MAKES',
+          'YOU',
+          'HAPPY',
+        ]}
         renderCard={card => {
           return (
             <View style={styles.card}>
